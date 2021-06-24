@@ -1,5 +1,9 @@
 /*  font-family: 'Source Sans Pro', sans-serif;  */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif; 
@@ -61,7 +65,7 @@ strong { font-weight: 900; }
    ================= */
    
 .intro {
-    background-image: url(../images/dark-ribs.jpg);
+    background-image: url(images/dark-ribs.jpg);
     background-size: cover;
     background-color: #404040;
     background-position: center;
@@ -102,6 +106,12 @@ strong { font-weight: 900; }
     .intro,
     .main-content {
         width: 50%;
+        min-height: 100vh;
+    }
+    
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
-   
